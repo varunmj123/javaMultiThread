@@ -1,0 +1,22 @@
+How to compile the Java implementation on Linux Terminal
+
+Step 1: Install JDK
+sudo apt-get install openjdk-8-jdk
+
+Step 2: Go to the folder where java_scheduler is saved
+
+Step 3: Use javac command to compile the code in the directory
+javac java_scheduler.java
+
+Step 4: If no errors are provided during compiling, run the code using java command
+java java_scheduler.java
+
+Step 5: Once the code runs it will ask the user for the following inputs:
+
+-Enter the buffer size:User enters an interger input for the size of the buffer
+-Enter the buffer size: User enters an integer input for the number of slave threads/consumer objects needed to be made
+-Enter the number of jobs to produce:User enters an integer input for the number of jobs the master thread/producer needs to make
+-Enter the max request duration (in seconds): User enters an integer input for the longest number of second a request can take
+-Enter the wait time for master (in seconds): User enters an integer input for the timeout of the master thread/producer
+
+Step 5: After all the inputs have been given to the program, the code will initiate and produce the Master Thread and slave threads that will produce tasks and include timeouts based on the user inputs 
